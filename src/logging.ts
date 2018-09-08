@@ -29,7 +29,7 @@ export function logger (winstonInstance) {
       transports: [
         //
         // - Write all logs error (and below) to `error.log`.
-        new winston.transports.File({ filename: 'error.log', level: 'error' }),
+        // new winston.transports.File({ filename: 'error.log', level: 'error' }),
         //
         // - Write to all logs with specified level to console.
         new winston.transports.Console({

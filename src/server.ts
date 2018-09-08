@@ -30,9 +30,9 @@ createConnection({
   password: connectionOptions.password,
   database: connectionOptions.database,
   synchronize: true,
-  logging: false,
+  logging: true,
   entities: [
-    'dist/entity/**/*.js'
+    'src/entity/**/*.ts' // need reset dist/entity/**/*.js
   ],
   extra: {
     ssl: config.dbsslconn, // if not development, will use SSL
